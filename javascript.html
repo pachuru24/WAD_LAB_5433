@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>JAVA SCRIPT</title>
+	<script type="text/javascript">
+		function change(){
+			var element = document.getElementById("ai");
+			alert(element.innerHTML);
+			element.innerHTML="Dept Of Artificial Intelligence";
+			var element1 = document.getElementsByClassName("result");
+			element1[1].innerHTML="Results will be soon<br>";
+			var element2 = document.getElementsByTagName("h2");
+			element2[0].innerHTML = element2[0].innerHTML +"of II-II";
+			element2[0].align="center";
+			document.getElementById('ai').style.color ="red";
+
+		}
+		function changedata(ele){
+			ele.innerHTML='II-II results';
+		}
+	</script>
+	</head>
+<body>
+	<h1 id ="ai" onclick="this.innerHTML ='Dept CSE'">Dept of AI</h1>
+	<p>Welcome to WAD class</p>
+	<h2  class ="result" align="left" onclick="changedata(this)">Results</h2>
+	<span class ="result"></span>
+	<input type="button" value ="Change Dept Name" onclick="change()">
+</body>
+</html>

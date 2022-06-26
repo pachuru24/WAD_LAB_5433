@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Java Script Demo</title>
+	<script type="text/javascript">
+		function show_alert(){
+			alert("alert box");
+		}
+		function show_prompt(){
+			name=prompt("please enter your name:","Enter name");
+			result=confirm("your name is " +name);
+			if(result !=""){
+				document.write("Entered name is"+name);
+			}
+		}
+	</script>
+	</head>
+<body>
+	 <h3>Alert Demo</h3>
+	<input type="button" name="h3" value="click here to display alert" onclick="show_alert()">
+	<h3>Prompt and confrim demo</h3>
+	<input type="button" name="h3"value="click here to display prompt" onclick="show_prompt()">
+</body>
+</html>
